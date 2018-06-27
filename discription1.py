@@ -39,7 +39,7 @@ with open('portdescript.csv', 'r') as f:
                                      ,secret='xxxxxxx')
             except:
                 print('cound not connect to',ip)
-                with open('ntpfail.txt','w') as f:
+                with open('switchfails.txt','w') as f:
                     f.write('script could not log into ' + ip)
 
             last_ip = ip
